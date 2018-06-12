@@ -1,0 +1,19 @@
+@import 'helpers/variables';
+
+@import 'base/reset';
+@import 'base/typography';
+@import 'base/layout';
+
+@import 'helpers/variables';
+
+@import 'components/promoted';
+@import 'components/upcoming';
+@import 'components/popular';
+@import 'components/top-rated';
+
+@import 'layout/header';
+@import 'layout/footer';
+
+@import 'pages/home';
+@import 'pages/movie';
+@import 'pages/search';

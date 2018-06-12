@@ -1,0 +1,122 @@
+.upcoming {
+  height: 400px;
+  margin: 50px 0;
+  overflow: hidden;
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+
+  p {
+   font-size: 1.7rem;
+   color: $white;
+   padding: 0 0 5px 25px;
+  }
+
+  .posters {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 350px;
+
+    .poster {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 2px;
+      transition: .4s ease-out;
+
+      img {
+        position: relative;
+        display: block;
+        height: 300px;
+        width: auto;
+        transition: .25s;
+      }
+
+      a {
+        position: absolute;
+        text-decoration: none;
+
+        .fa-play {
+          font-size: 35px;
+          color: #fff;
+          padding: 15px 15px 15px 20px;
+          border: 5px solid #fff;
+          border-radius: 50%;
+          box-sizing: border-box;
+          display: none;
+          transition: .1s ease-in-out;
+          opacity: .3;
+          cursor: pointer;
+
+          &:hover {
+            color: #ff0000;
+            -webkit-transform: translateZ(0) rotate(0.0001deg) scale(1.1);
+            transform: translateZ(0) rotate(0.0001deg) scale(1.1);
+            opacity: 1;
+          }
+        }
+      }
+
+      &:hover > img {
+        height: 350px;
+      }
+
+      &:hover > a .fa-play {
+        display: block;
+        -webkit-box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.3);
+        -moz-box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.3);
+        box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.3);
+      }
+    }
+
+    .arrows {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      visibility: hidden;
+      height: 350px;
+      z-index: 100;
+
+      .fa-angle-left {
+        position: absolute;
+        left: 0;
+        margin-left: 5px;
+        color: #fff;
+        font-size: 70px;
+        z-index: 100;
+        opacity: .7;
+        cursor: pointer;
+
+        &:hover {
+          opacity: 1;
+        }
+      }
+
+      .fa-angle-right {
+        position: absolute;
+        right: 0;
+        margin-right: 5px;
+        color: #fff;
+        font-size: 70px;
+        z-index: 100;
+        opacity: .7;
+        cursor: pointer;
+
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+
+    &:hover > .arrows {
+      visibility: visible;
+    }
+  }
+}
