@@ -28,7 +28,7 @@ class Header extends Component {
   render() {
     return (
       <div className='header'>
-        <Link to='/'><h1>WEBFLIX</h1></Link>
+        <Link to='/webflix'><h1>WEBFLIX</h1></Link>
         <div className='search-bar'>
           <input
             id='input'

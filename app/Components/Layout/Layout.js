@@ -38,17 +38,17 @@ class Layout extends React.Component {
 
   render() {
     return (
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <div className='app'>
           <Header />
           <Switch>
             <Route
-              exact path="/"
+              exact path={'/webflix'}
               render={()=><Home
                 windowWidth={this.state.windowWidth} />}
             />
-            <Route exact path="/movie" component={Movie} />
-            <Route exact path="/search" component={Search} />
+            <Route exact path={'/movie'} component={Movie} />
+            <Route exact path={'/search'} component={Search} />
           </Switch>
           <Footer />
         </div>
