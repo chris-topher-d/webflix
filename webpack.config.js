@@ -22,10 +22,6 @@ module.exports = {
           options: { minimize: true }
         },
         { loader: 'sass-loader' }
-        // fallback to style-loader in development
-        // process.env.NODE_ENV !== 'production' ? 'sytle-loader' : MiniCssExtractPlugin.loader,
-        // "css-loader",
-        // "sass-loader"
       ]}
     ]
   },
