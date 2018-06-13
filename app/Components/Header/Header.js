@@ -35,7 +35,7 @@ class Header extends Component {
             type='text'
             value={this.state.value}
             onChange={this.handleChange}
-            placeholder='Search for movies/shows'
+            placeholder='Search for movies'
           />
           <Link to={{ pathname: '/search'}}>
             <i className="fas fa-search" onClick={this.handleClick}></i>
