@@ -33,7 +33,7 @@ module.exports = {
     port: 3000,
     outputPath: path.resolve(__dirname, 'dist'),
     historyApiFallback: true,
-},
+  },
   plugins: [
     new HtmlWebpackPlugin({ template: 'app/index.html'}),
     new MiniCssExtractPlugin({
